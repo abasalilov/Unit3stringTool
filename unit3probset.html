@@ -1,0 +1,36 @@
+
+<body>
+        <nav>
+            <ul>
+                <li class="name">
+                   Unit 3 Functions Problem Set Aleksandr Basalilov
+                </li>
+        </nav>
+        <header>
+            <h1 class="header-title">stringTool Project</h1>
+            var sampleStr = prompt("Please enter a sentence for analysis");
+            var totalChar = 0;
+
+ function stringTool(Str) {
+        var stringSplit = Str.split(" "); 
+        var numWords = stringSplit.length;
+   
+   for (var i = 0; i < stringSplit.length; i ++) {
+       totalChar += stringSplit[i].length;
+    }
+    console.log("This string has "+numWords+" words. The average length of each word is "+ ((Math.round((totalChar/numWords)*100))/100) +" characters.")
+}
+
+stringTool(sampleStr);
+<script type="text/javascript">
+
+</script>
+        </header>
+        <main>
+      
+        </main>
+        <footer>
+            <p>(c) 2016 Aleks Basalilov</p>
+        </footer>
+    </body>
+</html>
